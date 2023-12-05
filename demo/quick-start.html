@@ -29,6 +29,7 @@
     var conf = {
         key: '88279505-ea35-4ba5-870b-e9c7978bccf9',
         playback: {
+            autoplay: true,
             preferredTech: [
                 {player: 'html5', streaming: 'hls'}
             ]
@@ -42,14 +43,13 @@
 
     var source = {
         title: 'test',
-        // dash: 'https://dash.akamaized.net/akamai/test/caption_test/ElephantsDream/elephants_dream_480p_heaac5_1.mpd',  // VOD
+        dash: 'https://dash.akamaized.net/akamai/test/caption_test/ElephantsDream/elephants_dream_480p_heaac5_1.mpd',  // VOD
         // dash: 'https://livesim2.dashif.org/livesim2/mup_30/testpic_2s/Manifest.mpd',  // live
         // dash: 'https://demo.unified-streaming.com/k8s/live/scte35.isml/.mpd',  // live
-        hls: 'https://test-streams.mux.dev/x36xhzz/url_8/193039199_mp4_h264_aac_fhd_7.m3u8',  // VOD
+        // hls: 'https://test-streams.mux.dev/x36xhzz/url_8/193039199_mp4_h264_aac_fhd_7.m3u8',  // VOD
     };
 
     var engine = new P2pEngineBitmovin({
-        live: false,        // set to true in live mode
         // trackerZone: 'hk',        // if using Hongkong tracker
         // trackerZone: 'us',        // if using USA tracker
         // token: YOUR_TOKEN
